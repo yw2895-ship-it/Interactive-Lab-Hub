@@ -238,7 +238,9 @@ video feed of whichever scene you want to capture.)
 **Include your first attempts at recording the wizarded set-up here.**
 
 
-https://github.com/user-attachments/assets/ee6a8735-5317-4e3f-80fd-6f75a0a8c9bb
+
+https://github.com/user-attachments/assets/9a1cc45b-7a53-438f-8414-87d83141d9e9
+
 
 
 
@@ -264,9 +266,17 @@ who doesn't should come away understanding what it's famous for. How might you i
 
 **Include your video here.**
 
+
+https://github.com/user-attachments/assets/cd86ae67-cdff-48b8-9011-ff1ef977b991
+
+
+
 **Please indicate who you collaborated with on this lab.** Be generous in
 acknowledging their contributions, and credit any other influences (YouTube,
 Github, Twitter, a friend who lent you a lamp) that informed your recreation.
+
+
+I collaborated with Jindi Chai (jc3892). We worked together on the storyboards, light signals, and prototype testing. We also helped each other control Tinkerbelle and record the interaction.
 
 ---
 
