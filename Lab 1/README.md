@@ -2,9 +2,9 @@
 
 _This project is to be done in teams of 2._
 
-**NAME OF BOTH COLLABORATOR(S) HERE**
+**Yilin Wu(yw2895), Jindi Chai(jc3892)**
 
-**THE MASTERWORK YOU DREW FROM THE HAT:**
+**THE MASTERWORK YOU DREW FROM THE HAT:The Ambient Umbrella**
 
 ---
 
@@ -92,6 +92,34 @@ the interaction*:
 **Describe your masterwork here, in your own words. What is the core interaction
 someone would recognize it by?**
 
+
+
+*What inputs are available to the user? What responses does the work give?*
+
+
+
+The user does not need to actively give any input. The umbrella automatically gets weather information from the internet. If it shows that it is raining locally, the handle will light up to remind the user to bring the umbrella. This simple reminder saves the user’s effort because they do not need to actively check the weather to decide whether to bring an umbrella.
+
+
+
+*Who is present, and how does the piece color the relationships between them?*
+
+
+
+The user, the umbrella, and weather information are involved. This product changes the umbrella from a passive tool into an object that can actively provide information. It brings more convenience to the user’s daily life by giving useful information directly through an everyday object.
+
+
+
+*What is the piece famous for? What are its strengths and its weaknesses?*
+
+
+
+This project explores how the internet and digital information can be integrated into everyday objects and tools to make people’s lives more convenient.
+Strengths: It is intuitive and the interaction is simple. When the umbrella lights up, it means it is raining and the user should bring it. Different types of light can also show different rain conditions.
+Weaknesses: The weather forecast may not always be accurate or detailed enough. For example, the forecast may show that it is not raining even when it is already raining outside. The umbrella also depends on an internet connection to receive information, so without a network connection, the light may not accurately reflect the weather.
+
+
+
 ## Part A. Plan
 
 For your masterwork, reconstruct the interaction as a scene:
@@ -105,16 +133,55 @@ For your masterwork, reconstruct the interaction as a scene:
 
 **Describe your setting, players, activity, and goals here.**
 
+*Setting: Where and when does this interaction happen? (a jungle, a kitchen, a spaceship corridor, a nightclub, a harbor at night)*
+
+
+
+Inside the user’s home, usually before going outside. Rainy days.
+
+
+
+*Players: Who is involved? Who else is present? Think through everyone in the setting, not just the primary user.*
+
+
+
+The user, the umbrella, and the weather information.
+
+
+
+*Activity: What is happening between the players and the light?*
+
+
+
+The umbrella lights up based on the weather, and the user sees the light and decides whether to bring it.
+
+
+
+*Goals: What is each player trying to do?*
+
+
+
+Help the user quickly know if they need an umbrella without checking the weather themselves.
+
+
+
+
 Now **sketch a 3 storyboards** of the interaction you are recreating. (The number may depend on the thing you drew, but stretch your thinking!) They
 don't need to be beautiful, but they must capture and communicate not only the behavior of the light, but how it affects
 and the people around it. If you're new to storyboarding, read
 [this explanation](https://www.nngroup.com/articles/storyboards-visualize-ideas/).
 
 **Include pictures of your storyboards here.**
+<img width="612" height="617" alt="截屏2026-08-30 21 11 27" src="https://github.com/user-attachments/assets/98388a8d-40a2-4ddc-8aa5-a520def97f1d" />
+
 
 Use the storyboards to decide what interaction to prototype.
 
 **Summarize the feedback you got here.**
+
+
+
+The feedback was that the basic rain reminder was clear and easy to understand, but the umbrella could provide more detailed information. My collaborator suggested using different light patterns to distinguish light rain from heavy rain and adding another signal for sunny days with a high UV level. Based on this feedback, I decided to use a slow, soft blue light for light rain, a fast, bright blue light for heavy rain, and a steady purple light for high UV.
 
 ## Part B. Act out the Interaction
 
@@ -124,10 +191,23 @@ it aloud.
 
 **Are there things that seemed better on paper than when acted out?**
 
+
+On paper, the differences between the light patterns seemed very clear. When we acted out the interaction, however, the light was less noticeable in a bright room. It was also difficult to position the phone so that the light looked like part of the umbrella while remaining visible to the user.
+
+
 **Did new ideas about the piece surface once you were on your feet?**
+
+
+We decided to place the light closer to the umbrella handle so that the user would notice it before leaving. We also decided to combine color, brightness, and flashing speed to make each signal clearer. A soft, slowly flashing blue light represents light rain, a bright, quickly flashing blue light represents heavy rain, and a steady purple light represents a high UV level.
+
 
 **Are there key moments in the interaction where things could go in a different direction?**
 Iterate your storyboards to capture key non-sequential aspects of the interaction. 
+
+
+
+Different light colors and patterns show no rain, light rain, heavy rain, or high UV. The user then decides whether to leave without an umbrella, take a rain umbrella, or take a parasol.
+
 
 ## Part C. Prototype the Light (light first!)
 
@@ -153,6 +233,11 @@ building any real electronics. (Zoom works well for recording; you can pin the
 video feed of whichever scene you want to capture.)
 
 **Include your first attempts at recording the wizarded set-up here.**
+
+
+https://github.com/user-attachments/assets/ee6a8735-5317-4e3f-80fd-6f75a0a8c9bb
+
+
 
 ## Part E. (optional) Costume the Device
 
