@@ -305,6 +305,10 @@ https://github.com/davidzhanggg/Interactive-Lab-Hub/tree/Fall2026/Lab%201
 
 **Summarize the feedback you got from your partners here.**
 
+
+
+1.I really liked the idea of using different colors and light patterns to represent different weather conditions. It makes the umbrella both useful and visually interesting, especially since users can understand the weather without checking their phones. The distinction between light rain, heavy rain, and high UV was also pretty clear. One thing I was wondering is whether the light would still be easy to notice in a very bright environment or during the daytime. Overall, I think it’s a creative and practical interaction!
+
 ## Remix, Update, or Critique the Master
 
 Now that you understand your masterwork from the inside, respond to it. Do the
