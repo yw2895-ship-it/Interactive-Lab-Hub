@@ -309,6 +309,15 @@ https://github.com/davidzhanggg/Interactive-Lab-Hub/tree/Fall2026/Lab%201
 
 1.I really liked the idea of using different colors and light patterns to represent different weather conditions. It makes the umbrella both useful and visually interesting, especially since users can understand the weather without checking their phones. The distinction between light rain, heavy rain, and high UV was also pretty clear. One thing I was wondering is whether the light would still be easy to notice in a very bright environment or during the daytime. Overall, I think it’s a creative and practical interaction!
 
+
+3.I really liked the idea of using different colors or tones depending on the weather conditions. Including the UV index was also really thoughtful! But it wasn't completely clear from the storyboard which color the umbrella would display for the high UV index case.
+I was also a little unsure about what triggers the umbrella's light. Does it light up whenever it starts raining, or only when the user is about to leave? If it activates when the user is leaving, how does the umbrella know this? Also, if the user doesn't interact with the umbrella after it lights up, does the light remain on or eventually turn off?
+
+
+
+Nice way to recreate the weather app information using handwritten notes. Could be improved by making them larger or more visible.
+The video sketch was also fun to watch and showed the general idea well! One suggestion would be to experiment with having the light flash at intervals rather than remaining constantly on. This might make the umbrella's notification more noticeable and make it clearer that is trying to get the user's attention
+
 ## Remix, Update, or Critique the Master
 
 Now that you understand your masterwork from the inside, respond to it. Do the
