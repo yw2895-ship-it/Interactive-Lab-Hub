@@ -310,6 +310,18 @@ https://github.com/davidzhanggg/Interactive-Lab-Hub/tree/Fall2026/Lab%201
 1.I really liked the idea of using different colors and light patterns to represent different weather conditions. It makes the umbrella both useful and visually interesting, especially since users can understand the weather without checking their phones. The distinction between light rain, heavy rain, and high UV was also pretty clear. One thing I was wondering is whether the light would still be easy to notice in a very bright environment or during the daytime. Overall, I think it’s a creative and practical interaction!
 
 
+2.Watched your video and went through the storyboards. What I saw: someone getting ready to leave walks up to the door, checks the umbrella handle, and decides whether to take it based on the color. Without reading the page, one can guess it's the Ambient Umbrella, the handle that glows when rain is in the forecast so you skip checking your phone. The person's goal is to get out the door without thinking about the weather, and the umbrella's job is to catch their eye at that exact moment. The lights were distinguishable and the door setup read clearly.
+
+
+
+Things I wasn't sure about. Blue for rain and red for high UV is a good extension, but what happens on a day with both? Does one win, or do you show both? Second, is the light saying it's raining right now or that it will rain later today? Those are different messages and I couldn't tell whether the light separates them. Third, does the light stop when the person picks up the umbrella, or does it keep glowing? Taking it off the stand seems like a natural signal that the message got through. Last, dark currently means no rain, but it also looks like the device is off or broken. A faint idle glow would make "working, nothing to report" clearer.
+
+
+
+Two ideas for part 2, given you named a wrong or offline forecast as the weakness: a separate color or slow pulse when the connection drops or the reading is uncertain, so the user knows not to trust it that day. A cool addition to explore would be a proximity trigger so the handle only lights up when someone approaches the door, which makes it feel like the umbrella is responding to the person instead of sitting there lit all morning.
+
+
+
 3.I really liked the idea of using different colors or tones depending on the weather conditions. Including the UV index was also really thoughtful! But it wasn't completely clear from the storyboard which color the umbrella would display for the high UV index case.
 I was also a little unsure about what triggers the umbrella's light. Does it light up whenever it starts raining, or only when the user is about to leave? If it activates when the user is leaving, how does the umbrella know this? Also, if the user doesn't interact with the umbrella after it lights up, does the light remain on or eventually turn off?
 
