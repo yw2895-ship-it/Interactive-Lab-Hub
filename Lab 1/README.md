@@ -330,6 +330,12 @@ I was also a little unsure about what triggers the umbrella's light. Does it lig
 Nice way to recreate the weather app information using handwritten notes. Could be improved by making them larger or more visible.
 The video sketch was also fun to watch and showed the general idea well! One suggestion would be to experiment with having the light flash at intervals rather than remaining constantly on. This might make the umbrella's notification more noticeable and make it clearer that is trying to get the user's attention
 
+
+Summary
+
+
+Our classmates gave us a lot of useful feedback, including positive comments and some questions. The positive feedback mainly focused on our simple, intuitive interaction, which helps users quickly understand the weather and decide whether to bring an umbrella. The main questions were about when exactly the umbrella light should turn on and off. For example, should the light stay on whenever the weather suggests bringing an umbrella, or should it only turn on at a certain time or in a specific situation? They also mentioned some special situations, such as when the environment is very bright or when the umbrella is outside the user’s view, and how the umbrella could still communicate the weather information and remind the user to bring it.
+
 ## Remix, Update, or Critique the Master
 
 Now that you understand your masterwork from the inside, respond to it. Do the
@@ -350,6 +356,41 @@ your response engages with what your master was really doing.
 
 **Document everything here — especially the storyboard and video. Photos of the
 prototype are great too.**
+
+
+Based on the feedback from our classmates, we decided to add some new functions to our Ambient Umbrella.
+
+
+
+First, we want to address one of the main questions from the feedback: when exactly should the umbrella light turn on? To save energy and give the user a clearer reminder, we want the umbrella to only activate when the user approaches the door. We can add a small proximity or motion sensor, similar to the sensors used by convenience store doorbells. When the sensor detects that the user is approaching the door (likely means they are about to leave) the umbrella will activate its light. We will still use different colors to represent different weather conditions, but we also plan to add a sound notification. Sometimes the user may not be able to see the umbrella or clearly notice its color, so a simple beeping sound can remind them to pay attention to the weather or bring the umbrella. The sound and light will be triggered at the same time to make the reminder more effective.
+
+
+
+We also thought about situations where the user may want to use the umbrella's weather reminder outside of their home. Because of this, we want to add a small button to the umbrella. When the user presses the button, it will trigger the same light and sound feedback. This allows the user to quickly check the weather without opening a weather app on their phone.
+
+
+
+
+Another question from our classmates was whether the umbrella shows the current weather or predicts future weather. We discussed this and think that when users are about to leave, they need more than just the current weather to decide whether they should bring an umbrella for the day. Because of this, our umbrella should also work as a forecast. If the weather forecast shows a chance of rain or other conditions that require an umbrella within the next six hours, the umbrella will show the corresponding light. This can help users better decide whether they should bring an umbrella before leaving.
+
+
+**New Storyboard**
+
+
+<img width="1280" height="1596" alt="64e2d29a8f7e9099bec0bcb9ccd6bfb1" src="https://github.com/user-attachments/assets/829a951a-626b-412d-a6c0-6451a24d9258" />
+
+
+
+<img width="1889" height="1965" alt="6d290ad13e453e3bebbe64e10f173402" src="https://github.com/user-attachments/assets/e2ea0464-c3f9-42a7-9d2c-cb2aa57177e9" />
+
+
+<img width="451" height="641" alt="截屏2026-09-08 21 09 42" src="https://github.com/user-attachments/assets/ca45a3b3-3318-47f8-8e95-36a340e6f788" />
+<img width="457" height="644" alt="截屏2026-09-08 21 09 55" src="https://github.com/user-attachments/assets/e614043b-6119-42bc-a22e-599dd3077816" />
+
+
+### Updated Video
+
+[Watch our updated Ambient Umbrella video on YouTube](https://www.youtube.com/shorts/yWRQg-sqsUA)
 
 ---
 
