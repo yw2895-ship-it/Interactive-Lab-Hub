@@ -217,6 +217,17 @@ We strongly discourage literal digital or analog clock display: Be creative.
 ** Insert ideas, sketches, [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf)), storyboards for your ideas **
 
 
+I want to create a clock related to dogs and dog walking. Since I have a dog myself, walking and playing with my dog have always been a very important part of our daily routine. I don’t want to use the traditional hour-and-minute format; instead, I want the current time to be reflected through changes in the dog’s activity levels throughout the day. When there’s still a long time until the next walk, the dog on the screen will be sleeping or resting; as walk time gradually approaches, the dog will wake up and start paying attention to its surroundings; when it’s almost time for a walk, it will become excited, and paw prints will appear; if it’s past the usual walk time, the dog will appear to be waiting or getting anxious. The specific visual presentation still needs to be tested, as I’m not sure whether the Raspberry Pi’s LED screen can display images or emojis, or if it’s limited to text. I may make adjustments based on the results of future testing. Since the LED display has two interactive buttons, I plan to add several different interfaces. Users can use one button to log a completed walk, while the other button allows them to switch between viewing data at different scales—such as how many times they’ve walked the dog today, how many walks have been completed this year, and the total distance the owner and dog have walked together over the past year.
+
+
+**Sketches & Storyboard**
+<img width="947" height="718" alt="截屏2026-09-13 16 20 39" src="https://github.com/user-attachments/assets/76ef7972-78d2-4ec4-917e-7519ec54ce36" />
+
+
+**Verplank Diagrams**
+<img width="1004" height="483" alt="截屏2026-09-13 16 21 14" src="https://github.com/user-attachments/assets/5abc1472-745f-4ccc-bae1-e65847957f2b" />
+
+
 
 **Put the names of the people you gave feedback to here. (Even better, add links to their repos here!)**
 
