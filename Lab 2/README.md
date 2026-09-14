@@ -230,7 +230,17 @@ I want to create a clock related to dogs and dog walking. Since I have a dog mys
 
 
 **Put the names of the people you gave feedback to here. (Even better, add links to their repos here!)**
+https://github.com/SinaL0123/Interactive-Lab-Hub/tree/Fall2026/Lab%202
 
+
+https://github.com/zg375/Interactive-Lab-Hub/tree/86dc14dd4b592afbeb4f4187617a6ae88da5ad3f/Lab%202
+
+
+https://github.com/bh654-dev/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
+
+
+
+I really like the dog walking clock idea because it connects time with a real daily routine instead of just showing hours and minutes. The different dog behaviors, like sleeping, waking up, and getting excited, make it easy to understand how close it is to walk time. I also think using the buttons to log walks and check walking data is a nice way to make the clock more interactive. One suggestion would be to make the dog’s different states visually very clear, maybe by using simple icons or different background colors, so users can quickly understand what each state means.
 # Lab 2 Part 2
 
 ## Prep 
