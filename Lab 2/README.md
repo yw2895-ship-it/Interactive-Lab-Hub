@@ -241,6 +241,11 @@ https://github.com/bh654-dev/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
 
 
 I really like the dog walking clock idea because it connects time with a real daily routine instead of just showing hours and minutes. The different dog behaviors, like sleeping, waking up, and getting excited, make it easy to understand how close it is to walk time. I also think using the buttons to log walks and check walking data is a nice way to make the clock more interactive. One suggestion would be to make the dog’s different states visually very clear, maybe by using simple icons or different background colors, so users can quickly understand what each state means.
+
+
+https://github.com/Afrozaktar/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
+
+
 # Lab 2 Part 2
 
 ## Prep 
