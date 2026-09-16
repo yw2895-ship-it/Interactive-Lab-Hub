@@ -239,16 +239,8 @@ https://github.com/zg375/Interactive-Lab-Hub/tree/86dc14dd4b592afbeb4f4187617a6a
 https://github.com/bh654-dev/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
 
 
-
-I really like the dog walking clock idea because it connects time with a real daily routine instead of just showing hours and minutes. The different dog behaviors, like sleeping, waking up, and getting excited, make it easy to understand how close it is to walk time. I also think using the buttons to log walks and check walking data is a nice way to make the clock more interactive. One suggestion would be to make the dog’s different states visually very clear, maybe by using simple icons or different background colors, so users can quickly understand what each state means.
-
-
 https://github.com/Afrozaktar/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
 
-
-
-Your dog walking clock idea is really creative. Tying the display to your dog's behavior states instead of a literal hour minute readout is very creative. It's also grounded in something personal and real (your own routine with your dog), which makes it more meaningful.
-Since you mentioned uncertainty about whether the screen can show images/emojis vs. just text, it might help to do a quick screen capability test early so your concept doesn't have to change last-minute.
 
 
 # Lab 2 Part 2
@@ -259,6 +251,9 @@ Since you mentioned uncertainty about whether the screen can show images/emojis 
 
 2. Look at and give feedback on the Part E. for at least 3 other people in the class and get 3 people to comment on your Part E!)
 **Put the feedback for your ideas here.**
+
+
+
 1)I really like your idea of showing time through the dog’s behavior! I was wondering what would happen in special situations though—like if the dog is sick, the weather is bad, or you just can’t go for a walk that day. Maybe there could be an option to skip or postpone the walk, so the dog doesn’t keep looking anxious 😭
 
 
