@@ -360,11 +360,18 @@ MENU = [('snooze', 'Postpone 30 min'), ('skip', 'Skip pending walk'),
         ('undo', 'Undo last action'), ('cancel', 'Back')]
 
 
-def frame(state, data, now, page, menu, demo, message, phase):
+def background_demo_time(now, elapsed):
+    """Preview four day periods without changing real time, schedules or statistics."""
+    hour = (8, 12, 19, 0)[int(max(0, elapsed) // 5) % 4]
+    return now.replace(hour=hour, minute=0, second=0, microsecond=0)
+
+
+def frame(state, data, now, page, menu, demo, message, phase, theme_now=None):
     from PIL import ImageDraw, ImageFont
     today, year, km, unknown = totals(data, now)
-    background, ink, bar, period = theme_for(now)
-    image = render(state, today, demo=demo, phase=phase, now=now)
+    theme_now = now if theme_now is None else theme_now
+    background, ink, bar, period = theme_for(theme_now)
+    image = render(state, today, demo=demo, phase=phase, now=theme_now)
     d = ImageDraw.Draw(image)
     try:
         small = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 11)
@@ -398,7 +405,12 @@ def main():
     parser.add_argument('--basic', action='store_true', help='Display-only first iteration')
     parser.add_argument('--test-sound', action='store_true', help='Test the speaker without initializing the display')
     parser.add_argument('--audio-device', help='ALSA output name, e.g. plughw:CARD=Device,DEV=0')
+    parser.add_argument('--demo-background', action='store_true',
+                        help='Enable demo mode and cycle day backgrounds every 5 seconds')
     args = parser.parse_args()
+    if args.demo_background:
+        args.demo = True
+        print('BACKGROUND DEMO: morning, afternoon, evening, night; 5 seconds each.')
     if args.test_sound:
         sound = BarkPlayer(ROOT / 'bark.wav', args.audio_device)
         try:
@@ -506,7 +518,8 @@ def main():
                     last_demo_alarm = demo_cycle
             if tick - last_frame >= .15:
                 display.image(frame(state, data, now, page, menu, args.demo,
-                                    message if tick < message_until else '', int(tick*2) % 2), 90)
+                                    message if tick < message_until else '', int(tick*2) % 2,
+                                    theme_now=background_demo_time(now, tick-start) if args.demo_background else None), 90)
                 last_frame = tick
             time.sleep(.01)
     except KeyboardInterrupt:
