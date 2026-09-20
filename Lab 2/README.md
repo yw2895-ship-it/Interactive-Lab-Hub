@@ -299,6 +299,26 @@ Do take advantage of having done the previous iteration to refine and simplify y
 ** Insert any updates ideas, sketches, [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf))!, storyboards for your ideas **
 
 
+### Ideas
+
+After listening to our classmates’ comments and suggestions, we decided to keep improving our Dog Walk Clock. Based on our original demo, we added some new features to solve problems we noticed in the current design. Different dogs can have different walking routines. Some dogs may need several walks every day, while others may only need one or two. We added a customizable walk schedule, so users can change the clock settings through the computer. They can reduce the number of walks or set different walking times for weekdays and weekends based on their daily routine.
+
+We also added a speaker to the clock. When it reaches a scheduled walking time, the dog will make a barking sound to remind the owner that it is time for a walk. Compared with the silent visual reminder on the LED screen, the sound can work more clearly like an alarm. We also slightly changed the visual environment on the screen. The background color changes at different times of the day to represent changes in the environment. Finally, we added a missed-walk correction feature. If the user cannot walk the dog on time, or forgets to press the button after the walk, they can correct it later without affecting the rest of the clock.
+
+
+### Sketches & Storyboard
+<img width="1079" height="714" alt="截屏2026-09-20 14 59 55" src="https://github.com/user-attachments/assets/aff6ee62-a817-47f1-976d-3fe34e8be1d0" />
+
+
+<img width="1076" height="458" alt="截屏2026-09-20 15 00 07" src="https://github.com/user-attachments/assets/50680d3b-c203-44c5-96e0-267f0992587d" />
+
+
+### Verplank Diagram
+<img width="1040" height="479" alt="截屏2026-09-20 15 02 53" src="https://github.com/user-attachments/assets/fcbbf419-6ab4-4111-a10f-1c56e74c979c" />
+
+
+
+
 \*\*\***Put a copy of your code in your Lab 2 Github repo.**\*\*\*
 
 \*\*\***Take a video of your PiClock.**\*\*\*
