@@ -285,6 +285,10 @@ Start small, pick just one element of your overall idea, just to show you have a
 
 \*\*\***Take a video of your barely modified PiClock.**\*\*\*
 
+
+https://github.com/user-attachments/assets/f18abc4a-c115-4b29-bef9-3047d9fdea37
+
+
 After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
 
 ```
@@ -323,6 +327,11 @@ We also added a speaker to the clock. When it reaches a scheduled walking time, 
 
 
 \*\*\***Put a copy of your code in your Lab 2 Github repo.**\*\*\*
+
+
+[Code](./dog_clock_v3.py)
+
+
 
 \*\*\***Take a video of your PiClock.**\*\*\*
 
