@@ -341,6 +341,17 @@ https://youtube.com/shorts/t_dNxQuSu40?feature=share
 
 As always, make sure you document contributions and ideas from others (and AI) explicitly in your writeup.
 
+
+Jindi proposed the original Dog Walk Clock concept and designed its initial interactions. We then developed the design together, discussing improvements and adding features. Jindi created and revised the sketches, storyboard, and Verplank diagram throughout the project. Yilin led the implementation on the Raspberry Pi, using the feature descriptions and sketches to guide development. We worked together to film and edit the demonstration video.
+
+
+Special Thanks: We would like to thank Longan (Jindi’s dog) for being the inspiration behind this project, helping us test the demo, and appearing in our demo video! We also used Codex to assist us with the development and testing of the clock.
+
+
+
+<img width="202" height="201" alt="截屏2026-09-20 18 54 50" src="https://github.com/user-attachments/assets/0dd00251-9c57-4883-a4f4-96211dbceaba" />
+
+
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab.  Make sure the page for the group turn in is linked to your personal Interactive Lab Hub page. 
 
 
