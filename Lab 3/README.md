@@ -169,6 +169,11 @@ Speak, pause, and watch it transcribe. Now change the endpointing threshold — 
 
 There is no correct value. A system that takes drink orders and a system that listens to someone think out loud want very different thresholds, and the right one depends on what your users are doing with their pauses.
 
+
+
+At a 0.2-second silence threshold, my sentence was split into several short utterances. Normal pauses between phrases were treated as the end of my turn, and the short fragments also reduced transcription accuracy because Whisper had less context. At 0.7 seconds, the result improved, but my speech was still divided into multiple pieces, so this threshold was still too short for my speaking pace. At 1.5 seconds, the complete short phrase stayed together, but the pause after I finished made the system feel hesitant and slow. A value around 1.0 second would probably be a better compromise for my speaking style.
+The complete echo loop correctly heard “There is a cat” and replied, “You said: There is a cat.” Speech recognition took 5.24 seconds, while Piper produced its first audio in 0.22 seconds. The total gap was 5.45 seconds, so the recognition delay, rather than speech synthesis, had the largest effect on responsiveness.
+
 ### The complete loop
 
 `echo_bot.py` puts the pieces together: it listens, endpoints, transcribes, and speaks a reply through Piper. The dialogue policy is deliberately trivial — it repeats what you said — so that everything you notice is a property of the timing rather than the content.
