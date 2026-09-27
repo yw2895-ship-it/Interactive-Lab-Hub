@@ -228,6 +228,12 @@ A further improvement would be to confirm the timer duration before starting it:
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing. Please record this interaction (for example, using Zoom's record feature).
 
+
+
+
+
+https://github.com/user-attachments/assets/4f0f1b2c-1139-441b-b8b0-98213bad8c52
+
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
 
