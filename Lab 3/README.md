@@ -3,7 +3,7 @@
 **NAMES OF COLLABORATORS HERE**
 
 
-Jindi Chai, Sina Liu & Yilin Wu
+Yilin Wu, Sina Liu & Jindi Chai
 
 [![Watch the video](https://user-images.githubusercontent.com/1128669/135009222-111fe522-e6ba-46ad-b6dc-d1633d21129c.png)](https://youtu.be/LZ0VJClIlRI?si=Yy84mcyVYuVV19mn)
 
@@ -138,6 +138,10 @@ Available sizes, smallest first: `tiny.en`, `base.en`, `small.en`, `medium.en`. 
 \*\***Record a few seconds of your own speech (`arecord -d 5 -f cd -c 1 -r 16000 test.wav`) and transcribe it with at least two model sizes. Report the real-time factor for each. At what point does the accuracy improvement stop being worth the delay, for a system that has to answer you?**\*\*
 
 \*\***Write your own script that verbally asks for a numerical input (a phone number, zipcode, number of pets) and records the answer the respondent provides.**\*\* Numbers are a good stress test — transcription systems make characteristic errors on digit strings, and you will want to know what they are before you design around them.
+
+
+
+I recorded a five-second clip saying, “Hi, I have a cat.” All three models transcribed it correctly. Tiny.en had a real-time factor of 0.19, base.en had an RTF of 0.36, and small.en had an RTF of 1.08. The larger models did not improve the accuracy for this recording. For a conversational system, I would choose tiny.en because it produced the same correct result with the shortest delay. The accuracy improvement stopped being worth the delay before base.en for this clear, simple recording.
 
 ## C. Turn-taking: knowing when someone has stopped talking
 
