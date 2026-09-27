@@ -231,6 +231,15 @@ Find a partner, and *without sharing the script with your partner* try out the d
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
 
+
+Acting out the dialogue made us realize that the cooking assistant needed to follow the user’s pace rather than the timing we imagined in our storyboard. We had planned a progress check after 20 seconds, but that did not necessarily mean the user would be ready. The exchange “Wait, I’m still cutting” showed why the assistant should wait for an explicit “Next” instead of automatically continuing.
+
+The interaction also felt less linear than the written script. Requests such as “Repeat that” and “I don’t have olive oil” interrupted the recipe instructions. These exchanges highlighted the need to remember the current step and return to it after answering the user.
+
+The timer correction revealed another weakness. When the assistant interpreted “five minutes” as “nine minutes,” the user had to correct it. We would revise this interaction so that the assistant confirms the duration before starting the timer.
+
+Overall, acting out the dialogue shifted our attention from what the assistant says to when it speaks, when it stays quiet, and how it handles corrections. Our next version would give the user more control over the pace and make confirmation of numerical inputs explicit.
+
 ---
 
 # Lab 3 Part 2
