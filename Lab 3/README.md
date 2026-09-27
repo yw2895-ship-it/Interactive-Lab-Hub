@@ -199,6 +199,31 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 
 Your script should include the pauses. Where does your device wait, and for how long? You now know from Part C that this is a parameter you have to choose, not something that happens for free.
 
+
+
+### Process and Dialogue Timing
+
+Our design is a voice-controlled cooking assistant that helps users follow a recipe while their hands are dirty or occupied. Our storyboard follows a cooking session from preparing ingredients to finishing the meal. It includes requests to repeat instructions, a missing ingredient, and correction of a misheard timer duration. We also recorded a video demonstration of the interaction.
+
+The assistant gives one instruction at a time. After asking the user to chop an onion, it waits 20 seconds before asking, “Ready for the next step?” If the user replies, “Wait, I’m still cutting,” it says, “No problem. Let me know when you’re ready.” It then waits for the user to say “Next,” without a fixed deadline. This allows the user’s cooking pace to determine when the recipe advances.
+
+Our dialogue also supports recovery. In a noisy kitchen, “Repeat that” makes the assistant repeat its previous instruction. When the user says, “I don’t have olive oil,” the assistant suggests vegetable oil and asks whether the user wants to continue. In the timer scene, the assistant mishears “five minutes” as “nine minutes.” The user corrects it, and the assistant acknowledges the correction.
+
+### Pauses in Our Script
+
+- **After a spoken command:** Our proposed endpointing threshold is 1.0 second of silence before processing the response. This applies to commands such as “Next,” “Repeat that,” and “No, five minutes.”
+- **During food preparation:** The assistant waits 20 seconds before its initial progress check.
+- **After “Wait, I’m still cutting”:** It waits until the user says “Next.” Silence does not mean that the cooking step is complete.
+- **After a confirmation question:** We would allow 5 seconds for the user to begin answering. If there is no response, the assistant would repeat the question once and then wait quietly. Once speech begins, the endpointing threshold determines when the answer ends.
+- **During the timer:** Once the duration is corrected to five minutes, the timer should count five minutes and then announce completion. The assistant should not assume that the entire meal is finished simply because the timer has ended.
+
+### How Part C Informed Our Design
+
+In our tests, a 0.2-second silence threshold split speech into short fragments. At 0.7 seconds, speech was still divided into several segments. The 1.5-second setting allowed a short phrase to remain together but introduced a longer wait before processing. These trials used different utterances, so they do not establish a single best threshold. We would start testing our cooking assistant at 1.0 second and adjust it using the same sentences under realistic kitchen conditions.
+
+Intentional pauses are separate from processing delays. Our echo-bot test reported 5.24 seconds for speech recognition, 0.22 seconds to the first synthesized audio, and a total gap of 5.45 seconds. Choosing a silence threshold therefore does not guarantee an equally fast reply.
+
+A further improvement would be to confirm the timer duration before starting it: “I heard five minutes. Is that correct?” This would give the user an opportunity to correct a number before the device acts.
 ## E. Acting out the dialogue
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing. Please record this interaction (for example, using Zoom's record feature).
