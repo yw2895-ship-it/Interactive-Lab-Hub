@@ -137,6 +137,16 @@ pi@raspberrypi:~ $ ollama list
 \*\*\***Include a screenshot of `ollama list` showing your models.**\*\*\*
 
 
+<img width="310" height="369" alt="截屏2026-10-25 19 47 38" src="https://github.com/user-attachments/assets/4e94c1d9-8135-49e2-8493-c9976cde8a17" />
+
+
+<img width="517" height="370" alt="截屏2026-10-25 19 47 59" src="https://github.com/user-attachments/assets/36818f69-0e87-4d93-8fb3-364bdfd4407b" />
+
+
+<img width="465" height="62" alt="截屏2026-10-25 19 48 18" src="https://github.com/user-attachments/assets/679d442b-0cc8-4afa-ab97-f2a2f3e1e80a" />
+
+
+
 ## Part B. 
 ### See: recognize people in real time with YOLO
 
