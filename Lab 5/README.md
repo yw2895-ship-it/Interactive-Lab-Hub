@@ -333,7 +333,56 @@ Qwen (18.4 s):
 One person came in from the right, moved close to the camera, and left after about half a minute. ...
 ```
 
+Those four lines are the whole of what Qwen knows about the minute. If YOLO lost you for one frame, the log says you left and came back, and the report will say so too.
+
+Run it with a partner: have them walk in, sit down, leave. Compare the log with what Qwen concluded. Then change one thing at a time:
+
+* **The question.** `--question "Did anyone leave?"`, `--question "Should I be worried?"`, `--question "Write one sentence a sleepy person would want to hear."` Same log, different job for the reasoner.
+* **The interpreter.** Edit `interpret()`: drop the positions, add "standing" versus "sitting" (a sitting person's box is shorter and squarer), count only people who are close. Qwen's answers change because its world changed.
+* **The other objects.** By default the detector is told to look for people only. With `--all` it reports all 80 classes and the interpreter adds them to the reading, as in `1 person(s) at center/close; also chair, cup`. Look closely at what it names: at 320 pixels a white chair, a bucket or a sink is a "toilet" often enough, and Qwen will faithfully report the toilet in your bedroom. Deciding which objects deserve a mention is interpreter work.
+* **The log.** Every run saves `watch_log.txt`. Edit it so it contradicts itself and feed it back with `--log watch_log.txt`: the camera is skipped and Qwen reasons over your edited file. Does it notice?
+* **The format.** `--json` gets `{"people": 1, "activity": "...", "unusual": false}` back, which is what you will want in Part 2 to drive a display or a sound.
+* **The timing.** `--seconds 300` watches longer. `--every` logs every reading instead of only changes, so the log grows to hundreds of lines and Qwen has to find the changes itself. See whether it still can.
+
+\*\*\***Document the pipeline: at least three runs with the log, the question, Qwen's answer, and whether it was right. Include one case where Qwen got it wrong, and say what you changed in the interpreter and why.**\*\*\*
+
+
+
+### Run 1 — Default pipeline
+
+<img width="500" alt="Run 1 observation log and Qwen response" src="https://github.com/user-attachments/assets/27a60d4e-f9e1-435c-87eb-cd5ed316e02e" />
+
+**Question:** What happened during the observation period?
+
+**Result:** Qwen took 35.2 seconds. Its answer was incorrect because it claimed that one person remained at `center/close` throughout the observation, while the log contained `nobody`, two people, and several changes in position and distance.
+
 ---
+
+### Run 2 — Different question
+
+<img width="500" alt="Run 2 asking whether anyone left the scene" src="https://github.com/user-attachments/assets/5c2b80d8-15bd-4d75-a38d-0ef8b687b5b1" />
+
+
+<img width="1324" height="490" alt="截屏2026-10-25 21 29 39" src="https://github.com/user-attachments/assets/d9282846-a87b-4b26-9486-69e147419bc8" />
+
+
+
+**Question:** Did anyone leave the scene?
+
+**Result:** Qwen took 13.9 seconds and answered “Yes.” The conclusion was generally correct because the log changed from a person being present to `nobody`. However, its explanation cited incorrect timestamps and misunderstood some `left/far` readings, so I considered the answer partially correct.
+
+---
+
+### Run 3 — Modified interpreter
+
+<img width="500" alt="Run 3 after changing the interpreter threshold" src="https://github.com/user-attachments/assets/2ae05de3-cb82-43ad-bdd1-b322e9af56bb" />
+
+**Interpreter change:** I changed the close/far threshold from 60% to 50% of the frame height. I made this change so that the system would classify a person as close earlier, allowing an observant safety system to react sooner when someone approaches the camera.
+
+**Question:** What happened during the observation period?
+
+**Result:** Qwen took 14.3 seconds. Its answer was incorrect because it said that one person was present throughout the observation and that no movement occurred. The log contained `nobody` readings and multiple changes among left, center, right, close, and far.
+
 
 # Lab 5 Part 2: Overnight Sensation
 
