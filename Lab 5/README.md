@@ -287,7 +287,17 @@ A 0.8B model is slow and sometimes wrong. It will invent events that are not in 
 \*\*\***Ask Qwen three questions to answer. Paste the questions, the answers and how long each took. Try one of them with `qwen3:0.6b` and compare.**\*\*\*
 
 <details>
-  Q&A here
+  <img width="893" height="269" alt="截屏2026-10-25 21 01 50" src="https://github.com/user-attachments/assets/cfbc4c14-3027-4991-907e-c2145a3538f8" />
+
+
+
+  #### Comparison
+
+Both models gave inaccurate answers about Roosevelt Island. Neither response mentioned that it was formerly called Blackwell's Island and Welfare Island, that it received its current name in 1973, or that Cornell Tech opened there in 2017. The `qwen3:0.6b` model was even less accurate because it incorrectly placed Roosevelt Island near New Zealand.
+
+In this test, `qwen3.5:0.8b` took 11.1 seconds, while the smaller `qwen3:0.6b` model took 14.6 seconds. Therefore, the smaller model was 3.5 seconds slower in this particular run and produced a less accurate answer. The image question took the longest at 35.5 seconds, but the model described the photograph accurately.
+
+
 </details>
 
 
