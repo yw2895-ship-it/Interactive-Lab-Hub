@@ -235,6 +235,25 @@ Consider how you might use this position based approach to create an interaction
 \*\*\***Include a screenshot or short video of the hand pose demo, and write how you might use face, hand or body pose tracking in your observant system.**\*\*\*
 
 
+
+#### MediaPipe hand-pose demonstration
+
+<img width="400" alt="Pinch gesture setting the percentage to 27 percent" src="https://github.com/user-attachments/assets/78521643-ff15-4936-8f2c-56cf7e42873d" />
+
+<img width="400" alt="Wider pinch gesture setting the percentage to 78 percent" src="https://github.com/user-attachments/assets/a9d091e3-8bad-4709-b8ba-9660e4dfd888" />
+
+<img width="400" alt="Quiet Coyote gesture setting the percentage to zero" src="https://github.com/user-attachments/assets/682130c3-315b-4a06-956c-eb3fcd6dda0e" />
+
+
+
+### Interaction idea
+
+The MediaPipe demo successfully tracked 21 landmarks on my hand. Changing the distance between my thumb and index finger changed the percentage from 27% to 78%. The Quiet Coyote gesture immediately set the percentage to 0%, which could be used as a mute command.
+
+In my observant system, I could use hand-pose tracking to control lighting and audio without touching a physical device. A pinch gesture could continuously adjust the brightness or volume, while the Quiet Coyote gesture could immediately mute the audio. Other gestures could trigger different events, such as an open palm pausing the system or a raised index finger turning a light on. This would allow the system to respond to deliberate human actions while remaining unobtrusive.
+
+
+
 ## Part D. 
 ### Reason: run Qwen on the Pi with Ollama
 
