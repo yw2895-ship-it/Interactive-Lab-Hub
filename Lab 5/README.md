@@ -173,6 +173,41 @@ Then press q to quit and run it again with a flag. Each one changes a single thi
 
 
 
+#### `--conf 0.2`
+
+<img width="450" alt="YOLO detection with confidence threshold 0.2" src="https://github.com/user-attachments/assets/6b6a941a-6042-4ad6-a0d6-176e9e52977c" />
+
+<img width="450" alt="YOLO close-up detection with confidence threshold 0.2" src="https://github.com/user-attachments/assets/95666b35-d4b9-4dbb-9c11-31ffab7e48a4" />
+
+#### `--conf 0.7`
+
+<img width="450" alt="YOLO detection with confidence threshold 0.7" src="https://github.com/user-attachments/assets/b018d472-fb15-41f3-8e55-ae131de4367f" />
+
+<img width="450" alt="YOLO missed distant person with confidence threshold 0.7" src="https://github.com/user-attachments/assets/d4db0293-c49e-44b9-9198-7a27d493b5c1" />
+
+<img width="450" alt="截屏2026-10-25 20 38 11" src="https://github.com/user-attachments/assets/b5054949-f958-4273-b2ec-b123c2298c69" />
+
+#### All object classes: `--all`
+
+<img width="450" alt="YOLO detecting a laptop and cup" src="https://github.com/user-attachments/assets/e97e1c5f-3f17-41b3-a1bc-c420d1ac6db6" />
+
+<img width="450" alt="YOLO misclassifying a phone as a remote" src="https://github.com/user-attachments/assets/53aebab3-cc7f-4be8-89f1-51858c53d241" />
+
+
+
+### Three person-detection failure situations
+
+1. **A cup was incorrectly detected as a person with `--conf 0.2`.**  
+   When the camera was pointed toward the window reflection, YOLO incorrectly detected a cup as a person. Lowering the confidence threshold to 0.2 allowed uncertain detections to appear. The reflections, low lighting, and the cup’s outline may have created a pattern that looked similar to part of a human body.
+
+2. **A real person in the window reflection was missed with `--conf 0.7`.**  
+   At the 0.7 confidence threshold, YOLO did not detect the real person visible in the window reflection. The reflected person was dark, small, partially obscured, and had low contrast. Because the threshold was high, the model rejected the detection as insufficiently confident.
+
+3. **A person displayed on a phone was detected as a real person with `--conf 0.7`.**  
+   YOLO detected the person shown on my phone with 0.78 confidence even though that person was not physically present. The model recognized the face, body shape, and clothing in the phone image, but it could not distinguish a person displayed on a screen from a real person in front of the camera.
+
+
+
 ## Part C. 
 ### See more: hands and pose with MediaPipe
 
