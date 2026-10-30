@@ -448,12 +448,39 @@ The morning report should remain simple and honest. Instead of displaying the en
 \*\*\***Post your revised storyboard here.**\*\*\*
 
 
+### Device Placement and Consent
+
+The device will spend the night beside the dog’s resting area in the living room. The webcam will be positioned so that its field of view includes only the dog bed and the surrounding floor, not any human sleeping area.
+
+Everyone who lives in the space will be informed about the experiment before the first overnight run, and monitoring will begin only after they agree. All detection results will remain on the Raspberry Pi. The system will sample one frame every ten seconds, and any temporary images will be deleted after the demonstration.
+
+
+### Revisions After Feedback
+
+Based on the feedback, we revised the original setup sketch into a six-panel storyboard that shows the complete interaction over time. The first two panels show the owner positioning the camera, pressing the start button, and receiving a “Monitoring started” acknowledgement. The middle panels show the system sampling the resting area every ten seconds and recording when the dog leaves and returns. The final panels show the owner checking the device in the morning and receiving one short summary.
+
+Part E showed that a single missed detection can create a false event and that Qwen may summarize a log incorrectly. To reduce this problem, the revised design will require the same detection result to appear in several consecutive samples before recording a change. The morning report will be generated from the confirmed events and will remain short and honest about uncertainty.
+
+
+### Revised Storyboard
+
+<img width="780" height="440" alt="截屏2026-10-30 15 54 39" src="https://github.com/user-attachments/assets/d9c23a9c-8c86-4605-99a0-e6282c304a79" />
+
+
+
 ## Part G. 
 ### Design the interaction before
 
 The hand-off: the person tells the device what to watch tonight, and the device acknowledges it. Keep it to a thirty-second ritual. A button or a touch (Lab 4), a spoken sentence (Lab 3), a wave or a Quiet Coyote at the camera (Part C). The acknowledgement can be a line on the display, a tone, or an LED that dims rather than lights up. At its simplest, the hand-off just sets the question that the morning will answer.
 
 \*\*\***Describe the interaction before.**\*\*\*
+
+
+### Interaction Before Bed
+
+Before going to bed, the owner checks that the webcam is pointing only at the dog’s resting area and then presses the button on the Raspberry Pi device. This hands the night over to the system and sets the morning question: “Did my dog leave the resting area during the night?”
+
+The Mini PiTFT displays “Monitoring started” with a check mark for three seconds, then dims so that it does not disturb the owner or the dog. The device begins checking the resting area every ten seconds and stores the observations locally on the Pi. The entire hand-off takes less than thirty seconds and does not require the owner to use a laptop.
 
 ## Part H. 
 ### Incorporate the observant system
