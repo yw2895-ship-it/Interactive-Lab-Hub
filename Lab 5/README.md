@@ -414,7 +414,7 @@ Use storyboards and/or [Verplank diagrams](https://ccrma.stanford.edu/courses/25
 
 **Project Idea — Pet Night Diary**
 
-For Part 2, We want to design a Pet Night Diary that helps pet owners understand their dog's nighttime activity without having to check on them during the night. The device uses a Raspberry Pi, Mini PiTFT, and a webcam to observe the dog's resting area and record when the dog is detected.
+For Part 2, we want to design a Pet Night Diary that helps pet owners understand their dog's nighttime activity without having to check on them during the night. The device uses a Raspberry Pi, Mini PiTFT, and a webcam to observe the dog's resting area and record when the dog is detected.
 
 Before going to bed, the owner can press a button to start monitoring. During the night, the device uses YOLO to check for the dog at regular intervals and records the detection results. The next morning, the owner can view a short summary of when their dog was detected near its resting area. I want the interaction to be simple and quiet, so it can work in the background without disturbing the owner or the dog.
 
@@ -427,9 +427,23 @@ Before going to bed, the owner can press a button to start monitoring. During th
 
 1. Look at and give feedback on the Part F storyboards.
    **Put the feedback for your ideas here.**
-2. [Update your Lab Hub](prep.md#get-the-latest-content) to get the latest content for Part 2.
-3. Decide where the device will spend the night and who else lives there. Get their OK before the first run.
-4. Revise your storyboard with the feedback and with what you learned in Part E about where the pipeline breaks.
+
+
+The current sketch clearly shows the physical setup and makes it easy to understand that the webcam observes a fixed resting area. The Raspberry Pi and Mini PiTFT are positioned close to the dog’s bed, and the camera is directed toward the pet rather than toward a human sleeping area. This supports privacy and makes the purpose of the system clear.
+
+However, the sketch currently explains what the system looks like more clearly than how the interaction unfolds over time. The revised storyboard should show three stages: the owner starting the system before bed, the device observing and logging changes during the night, and the owner receiving one short summary in the morning.
+
+The bedtime hand-off should also include clear acknowledgement. After the owner presses the button, the Mini PiTFT could briefly display “Monitoring started” and then dim so that it does not disturb the dog or owner.
+
+A possible technical problem is that YOLO may fail to detect the dog for a single frame, especially in low light. This could create a false event in which the log says that the dog left and immediately returned. To reduce this error, the system should confirm the same reading across several samples before recording a change.
+
+The morning report should remain simple and honest. Instead of displaying the entire log, it should answer one useful question, such as whether the dog left the resting area, how many times it left, and the longest amount of time it was away. If nothing happened, the report should clearly state that no unusual activity was detected.
+
+
+
+3. [Update your Lab Hub](prep.md#get-the-latest-content) to get the latest content for Part 2.
+4. Decide where the device will spend the night and who else lives there. Get their OK before the first run.
+5. Revise your storyboard with the feedback and with what you learned in Part E about where the pipeline breaks.
 
 \*\*\***Post your revised storyboard here.**\*\*\*
 
