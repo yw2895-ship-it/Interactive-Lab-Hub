@@ -1,10 +1,21 @@
 # Observant Systems: Overnight Sensation
 
-**Team:**
+**Team:** no-eye-deer
 
-**Members:** Full Name (netid, github-handle), ...
 
-**Project name:**
+**Members:** 
+
+
+Yilin Wu (yw2895), https://github.com/yw2895-ship-it/Interactive-Lab-Hub/edit/Fall2026/Lab%204
+
+
+Sina Liu (sl3733), https://github.com/SinaL0123/Interactive-Lab-Hub/tree/Fall2026/Lab%204
+
+
+Jindi Chai (jc3892), https://github.com/JindiChai/Interactive-Lab-Hub/blob/Fall2026/Lab%204
+
+
+**Project name:** Pet Night Diary
 
 <details>
 	<summary><strong>Instructions for Students (Click to Expand)</strong></summary>
