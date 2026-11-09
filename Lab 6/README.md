@@ -285,25 +285,25 @@ Before each test, we briefly explained that three Raspberry Pis collaboratively
 care for the same virtual pet, but we did not demonstrate the gestures in
 advance.
 
-### Test 1: Rest — Yichen
+### Test 1: Rest — James
 
-Yichen tested the Rest station by covering the APDS-9960 sensor with a hand.
-Before trying it, Yichen expected the interaction to work like a button and was
+James tested the Rest station by covering the APDS-9960 sensor with a hand.
+Before trying it, James expected the interaction to work like a button and was
 not sure how long the sensor needed to be covered.
 
 After covering the sensor for a few seconds, the Energy value increased on the
-shared dashboard. Yichen was surprised that changing the light level on one
+shared dashboard. James was surprised that changing the light level on one
 physical device could immediately update the same virtual pet viewed by users
 on other devices.
 
-Yichen suggested adding clearer instructions near the sensor, such as “Cover
+James suggested adding clearer instructions near the sensor, such as “Cover
 for 2–3 seconds,” as well as immediate visual feedback showing that the action
 had been detected.
 
 <img width="420"  alt="59028ce9ae6767f48ddec56a27442773" src="https://github.com/user-attachments/assets/eea3002f-1c6c-4a94-9a48-4bf863c46f7d" />
 
 
-*Yichen covers the APDS-9960 sensor to help Longan rest and restore Energy.*
+*James covers the APDS-9960 sensor to help Longan rest and restore Energy.*
 
 ### Test 2: Feed — Bowei
 
